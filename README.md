@@ -1,46 +1,44 @@
 # Days Delight
 
-Este es un proyecto que estoy desarrollando para una tienda de postres llamada **Days Delight**. La idea es crear una página sencilla donde los clientes puedan ver los productos disponibles y, desde otra página, yo pueda administrar el inventario.
+Dias Delectable
 
-## Lo que he hecho
+Esto es un iniciativa estamos construyendo para un establecimiento reposteril que lleva por nombre Days Delight. La propuesta es elaborar un sitio simple, los compradores observaran los manjares expuestos; desde un sitio distinto, me sera viable manejar el almacén.
 
-- Creé una página de inicio para mostrar los postres disponibles.
-- Añadí tarjetas con nombre, descripción, precio e imagen de cada producto.
-- Preparé un inventario inicial con 20 postres.
-- Hice una página de administración para publicar o retirar productos.
-- Añadí un formulario para crear nuevos postres usando una URL para la imagen.
-- Los cambios del inventario se reflejan en la tienda cuando se actualiza el contenido.
-- Diseñé la página para que se vea bien en computadora y celular.
-- Añadí un login con el usuario `luis` y claves generadas automáticamente.
-- Creé un backend en Python para validar las claves antes de entrar.
-- Las claves no se guardan directamente en el backend, sino como contraseñas cifradas.
+Lo que yo hecho
 
-## Cómo ejecutar el proyecto
+Una pagina de aterrizaje he formado, para los dulces ofrecidos.
+Cartas he añadido, con nombres, descripciones, costo y retrato de cada manjar.
+Un stock inicial he compuesto, sumando veinte dulces.
+Una sitio de gestion prepared yo, para subir o quitar mercancias.
+Un formato agregué yo, creandoporciones con direccion web de retrato.
+Las modificaciones del stock ellas se aprecian en el expendio si se refresca el contenido.
+El sitio yo he bosquejado, para que parezca elegante en ordenador y telefono.
+Un ingreso se agrego, el usuario es `luis`, las contraseñas generadas solas.
+Una parte posterior en Python esta diseñada, las contraseñas valida antes del acceso.
+Las contraseñas ellas no son almacenadas de forma directa, pero como claves encriptadas.
 
-Primero entro a la carpeta del backend:
+Maneras de correr el proyecto
 
-```bash
+Primero yo me ubico en el directorio de la parte posterior:
+
 cd backend
-python3 server.py
-```
-
-Después abro esta dirección en el navegador:
+python3 server. Seguido abro esta direccion en el navegador:
 
 ```text
 http://localhost:3000
 ```
 
-No debo abrir los archivos HTML directamente con doble clic, porque el login necesita que el servidor esté funcionando.
+Abrir los HTMLs directamente con doble click esta mal, el login necesita que el servor este en marcha.
 
-## Páginas principales
+## Paginas importantes
 
-Página de los clientes:
+Pagina de clientes:
 
 ```text
 http://localhost:3000/frontend/html/index.html
 ```
 
-Página de administración:
+Pagina de administracion:
 
 ```text
 http://localhost:3000/frontend/html/admin.html
@@ -54,18 +52,18 @@ El usuario de prueba es:
 luis
 ```
 
-Las claves se encuentran en `backend/generated-keys.txt`. Cada vez que ejecuto `generate_credentials.py`, se genera una lista nueva de claves.
+Las claves estan en `backend/generated-keys.txt`. Cada ves que ejecuto `generate_credentials.py`, se genera una lista nueba de claves.
 
-## Organización del proyecto
+## Estructura del proyecto
 
-- `backend/`: contiene el servidor, las credenciales y el generador de claves.
-- `frontend/html/`: contiene las páginas HTML.
-- `frontend/css/`: contiene los estilos de la tienda, el login y la administración.
-- `frontend/javascript/`: contiene la lógica del login, la tienda y el inventario.
-- `frontend/img/`: contiene las imágenes locales del proyecto.
+- `backend/`: tiene el servor, las credenciales y el generador de claves.
+- `frontend/html/`: contiene las paginas HTML.
+- `frontend/css/`: tiene los estilos de la tienda, el login y la administracion.
+- `frontend/javascript/`: contiene la logica del login, la tienda y el inventario.
+- `frontend/img/`: contiene las imagenes locales del proyecto.
 
-Por ahora el inventario se guarda en el navegador usando `localStorage`. Esto me sirve para probar el funcionamiento, aunque más adelante quiero conectarlo a una base de datos para que los productos se guarden de forma permanente.
+Por ahora el inventario se guarda en el navegador usando `localStorage`. Me ayuda para probar, pero despues quiero conectarlo a una base de datos para guardar los productos para siempre.
 
 Fecha: 19 de septiembre de 2026.
 
-Att: Luis.
+Atte: Luis.

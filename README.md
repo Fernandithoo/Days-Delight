@@ -2,7 +2,7 @@
 
 Days Delight 
 
-Esto es un iniciativa estamos construyendo para un establecimiento de reposteria que lleva por nombre 'Days Delight'. La propuesta es elaborar un sitio simple, los compradores observaran los manjares expuestos; desde un sitio distinto, me sera viable manejar el almacén.
+Esto es un iniciativa estamos construyendo para un establecimiento de reposteria que lleva por nombre 'Days Delight'. La propuesta es elaborar un sitio simple, los compradores observaran los manjares expuestos; desde un sitio Distinto se maneja el almacén.
 
 Lo que hemos echo:
 

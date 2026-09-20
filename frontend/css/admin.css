@@ -1,0 +1,42 @@
+/* Fuentes y colores del panel.  fotos robadas de ggogle xd 6767*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+:root { --ink: #2d2522; --muted: #786c66; --cream: #fffaf4; --rose: #b84d5d; --line: #eaded5; --green: #557a52; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: 'DM Sans', sans-serif; }
+a { color: inherit; }
+/* Encabezado del panel. */
+.encabezado-admin { padding: 24px 6vw 68px; background: linear-gradient(120deg, #fff8ef, #f2d6d3); }
+.barra-admin, .intro-admin, .panel-admin { max-width: 1180px; margin: auto; }
+.barra-admin { display: flex; justify-content: space-between; align-items: center; }
+.marca-admin { color: var(--rose); font: 700 25px 'Playfair Display', serif; text-decoration: none; }
+.volver-tienda, .boton-secundario { padding: 10px 16px; border: 1px solid var(--rose); border-radius: 999px; color: var(--rose); background: transparent; font: inherit; font-size: 13px; text-decoration: none; cursor: pointer; }
+.intro-admin { margin-top: 70px; }
+.eyebrow { margin: 0 0 9px; color: var(--rose); font-size: 12px; font-weight: 700; letter-spacing: 1.7px; text-transform: uppercase; }
+.intro-admin h1 { margin: 0 0 14px; font: 700 clamp(42px, 6vw, 70px)/1 'Playfair Display', serif; }
+.intro-admin > p:last-child { max-width: 520px; margin: 0; color: var(--muted); line-height: 1.6; }
+/* Área donde se administra el inventario. */
+.panel-admin { padding: 45px 24px 80px; }
+.resumen-admin { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-bottom: 42px; border: 1px solid var(--line); background: var(--line); }
+.resumen-admin div { display: flex; flex-direction: column; gap: 6px; padding: 22px; background: #fff; }
+.resumen-admin strong { font: 700 34px 'Playfair Display', serif; }
+.resumen-admin span { color: var(--muted); font-size: 13px; }
+/* Formulario para crear productos. */
+.alta-producto { display: grid; grid-template-columns: .8fr 1.5fr; gap: 40px; padding: 28px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.alta-producto h2, .cabecera-inventario h2 { margin: 0 0 8px; font: 600 30px 'Playfair Display', serif; }
+.alta-producto p:not(.eyebrow) { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+#formulario-producto { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+#formulario-producto label { display: flex; flex-direction: column; gap: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+#formulario-producto input { width: 100%; height: 44px; padding: 0 12px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: var(--cream); font: inherit; outline: none; }
+#formulario-producto input:focus { border-color: var(--rose); }
+#formulario-producto button { grid-column: 1 / -1; height: 44px; border: 0; border-radius: 6px; color: white; background: var(--rose); font-weight: 700; cursor: pointer; }
+.cabecera-inventario { display: flex; justify-content: space-between; align-items: end; margin: 58px 0 22px; }
+/* Tarjetas pequeñas de cada producto del inventario. */
+.inventario { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 12px; }
+.item-inventario { display: flex; align-items: center; gap: 12px; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+.item-inventario img { width: 58px; height: 58px; border-radius: 6px; object-fit: cover; }
+.detalle-inventario { min-width: 0; flex: 1; }
+.detalle-inventario h3 { overflow: hidden; margin: 0 0 5px; font-size: 14px; text-overflow: ellipsis; white-space: nowrap; }
+.detalle-inventario span { color: var(--rose); font-size: 13px; font-weight: 700; }
+.boton-estado { padding: 7px 9px; border: 1px solid #d8c8c0; border-radius: 5px; color: var(--muted); background: #f7f2ee; font-size: 11px; cursor: pointer; }
+.esta-publicado .boton-estado { border-color: #b8d2b1; color: var(--green); background: #edf6eb; }
+@media (max-width: 700px) { .encabezado-admin { padding: 20px 20px 55px; } .intro-admin { margin-top: 55px; } .panel-admin { padding: 32px 18px 60px; } .resumen-admin { grid-template-columns: 1fr; } .alta-producto { grid-template-columns: 1fr; gap: 24px; padding: 20px; } #formulario-producto { grid-template-columns: 1fr; } #formulario-producto button { grid-column: auto; } .cabecera-inventario { align-items: start; flex-direction: column; gap: 14px; } }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración | Days Delight</title>
+    <link rel="stylesheet" href="/frontend/css/admin.css">
+</head>
+<body>
+    <!-- Encabezado del panel de administración. -->
+    <header class="encabezado-admin">
+        <!-- Enlaces para cambiar entre administración y tienda. -->
+        <div class="barra-admin"><a class="marca-admin" href="/frontend/html/index.html">Days Delight</a><a class="volver-tienda" href="/frontend/html/index.html">Ver tienda</a></div>
+        <div class="intro-admin"><p class="eyebrow">Panel de administración</p><h1>Tu vitrina, a tu manera.</h1><p>Publica o retira postres de la tienda y los cambios quedarán visibles para tus compradores.</p></div>
+    </header>
+    <!-- Contenido principal de la administradora. -->
+    <main class="panel-admin">
+        <!-- Estos números se actualizan con JavaScript. -->
+        <section class="resumen-admin" aria-label="Resumen del inventario"><div><strong id="total-productos">20</strong><span>En inventario</span></div><div><strong id="publicados-productos">0</strong><span>Visibles en tienda</span></div><div><strong id="agotados-productos">0</strong><span>Retirados</span></div></section>
+        <!-- Formulario para añadir un nuevo postre. -->
+        <section class="alta-producto"><div><p class="eyebrow">Añadir al inventario</p><h2>Nuevo postre</h2><p>Usa una imagen pública y publícalo cuando esté listo.</p></div><form id="formulario-producto"><label>Nombre<input name="nombre" placeholder="Ej. Cheesecake de frutos rojos" required></label><label>Precio<input name="precio" type="number" min="0" step="0.01" placeholder="12.50" required></label><label>Imagen (URL)<input name="imagen" type="url" placeholder="https://..." required></label><label>Descripción<input name="descripcion" placeholder="Una breve descripción" required></label><button type="submit">Añadir y publicar</button></form></section>
+        <!-- Lista de todos los productos guardados. -->
+        <div class="cabecera-inventario"><div><p class="eyebrow">Inventario</p><h2>Productos de la tienda</h2></div><button class="boton-secundario" id="retirar-todos" type="button">Retirar todos</button></div>
+        <section class="inventario" id="inventario" aria-live="polite"></section>
+    </main>
+    <!-- products.js contiene los datos y admin.js controla los botones. -->
+    <script src="/frontend/javascript/products.js"></script>
+    <script src="/frontend/javascript/admin.js"></script>
+</body>
+</html>

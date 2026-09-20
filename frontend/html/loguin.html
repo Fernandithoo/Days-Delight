@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | Days Delight</title>
+    <link rel="stylesheet" href="/frontend/css/loguin.css">
+</head>
+<body>
+    <main class="pagina-login">
+      <section class="marca" aria-label="Days Delight">
+        <img src="/frontend/img/apple display.jpg" alt="Logo de Days Delight">
+        <h1>Days Delight</h1>
+        <p>Tu espacio para disfrutar cada día.</p>
+      </section>
+
+      <section class="formulario" aria-labelledby="titulo-login">
+        <form id="formulario-login" autocomplete="on">
+          <h2 id="titulo-login">Iniciar sesión</h2>
+          <p class="subtitulo">Accede a tu cuenta para continuar</p>
+
+          <label for="usuario">Correo electrónico o usuario</label>
+          <input type="text" name="usuario" id="usuario" placeholder="Correo electrónico o usuario" autocomplete="username" required>
+
+          <label for="contrasena">Contraseña</label>
+          <input type="password" name="contraseña" id="contrasena" placeholder="Contraseña" autocomplete="current-password" required>
+
+          <button class="boton-principal" type="submit">Iniciar sesión</button>
+          <p class="mensaje-login" id="mensaje-login" role="alert" aria-live="polite"></p>
+          <a class="enlace-secundario" href="#recuperar">¿Olvidaste tu contraseña?</a>
+          <div class="separador"><span>o</span></div>
+          <a class="boton-cuenta" href="#crear-cuenta">Crear una cuenta nueva</a>
+        </form>
+      </section>
+    </main>
+    <script src="/frontend/javascript/login.js"></script>
+</body>
+</html>

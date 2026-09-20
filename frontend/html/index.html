@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Delight | Postres</title>
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+</head>
+<body>
+    <!-- Encabezado visible para los clientes. -->
+    <header class="encabezado-tienda">
+        <!-- Barra con el nombre del negocio y el acceso de administración. -->
+        <div class="barra-superior">
+            <a class="marca-tienda" href="/frontend/html/index.html">Days Delight</a>
+            <a class="enlace-admin" href="/frontend/html/admin.html">Administrar productos</a>
+        </div>
+        <!-- Texto principal de bienvenida. -->
+        <div class="presentacion">
+            <p class="etiqueta">Postres hechos para celebrar lo cotidiano</p>
+            <h1>Un antojo bonito<br>empieza aquí.</h1>
+            <p>Descubre los favoritos de Days Delight, preparados con cariño y listos para endulzar tu día.</p>
+        </div>
+    </header>
+    <!-- Aquí JavaScript va a colocar las tarjetas de productos. -->
+    <main class="contenido-tienda">
+        <div class="titulo-seccion">
+            <div><p class="etiqueta">Selección de hoy</p><h2>Postres disponibles</h2></div>
+            <span id="contador-productos">0 productos</span>
+        </div>
+        <!-- El contenido de este espacio se genera desde products.js y store.js. -->
+        <section class="catalogo" id="catalogo" aria-live="polite"></section>
+        <p class="catalogo-vacio" id="catalogo-vacio" hidden>Pronto habrá nuevos postres disponibles.</p>
+    </main>
+    <!-- Pie de página sencillo. -->
+    <footer class="pie-tienda">Days Delight · Hecho para compartir algo dulce</footer>
+    <!-- Primero cargamos los datos y luego el código que los muestra. -->
+    <script src="/frontend/javascript/products.js"></script>
+    <script src="/frontend/javascript/store.js"></script>
+</body>
+</html>

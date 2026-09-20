@@ -1,0 +1,37 @@
+/* Fuentes usadas en la tienda. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* Colores principales del negocio. */
+:root { --ink: #2d2522; --muted: #786c66; --cream: #fffaf4; --peach: #f6c9b8; --rose: #b84d5d; --line: #eaded5; }
+* { box-sizing: border-box; }
+/* Estilos generales de la tienda. */
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: 'DM Sans', sans-serif; }
+a { color: inherit; }
+/* Encabezado y presentación principal. */
+.encabezado-tienda { padding: 24px 6vw 88px; background: linear-gradient(120deg, #fff8ef 0%, #f9ded3 58%, #e9bbc0 100%); }
+.barra-superior { display: flex; align-items: center; justify-content: space-between; max-width: 1180px; margin: auto; }
+.marca-tienda { color: var(--rose); font-family: 'Playfair Display', serif; font-size: 25px; font-weight: 700; text-decoration: none; }
+.enlace-admin { padding: 10px 16px; border: 1px solid var(--rose); border-radius: 999px; color: var(--rose); font-size: 13px; text-decoration: none; }
+.presentacion { max-width: 1180px; margin: 92px auto 0; }
+.etiqueta { margin: 0 0 13px; color: var(--rose); font-size: 12px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
+.presentacion h1 { max-width: 650px; margin: 0 0 20px; font-family: 'Playfair Display', serif; font-size: clamp(45px, 7vw, 82px); line-height: .98; }
+.presentacion > p:last-child { max-width: 480px; margin: 0; color: #5f514c; font-size: 18px; line-height: 1.6; }
+/* Catálogo de productos. */
+.contenido-tienda { max-width: 1180px; margin: auto; padding: 70px 24px 90px; }
+.titulo-seccion { display: flex; align-items: end; justify-content: space-between; margin-bottom: 28px; }
+.titulo-seccion h2, .pie-tienda { margin: 0; }
+.titulo-seccion h2 { font-family: 'Playfair Display', serif; font-size: 40px; }
+.titulo-seccion > span { color: var(--muted); font-size: 14px; }
+.catalogo { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 28px 18px; }
+.producto-tienda { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #fff; transition: transform .2s, box-shadow .2s; }
+.producto-tienda:hover { transform: translateY(-4px); box-shadow: 0 12px 25px #7951431c; }
+.imagen-producto { aspect-ratio: 1 / 1.05; overflow: hidden; background: #f2e7de; }
+.imagen-producto img { width: 100%; height: 100%; object-fit: cover; }
+.datos-producto { padding: 17px; }
+.datos-producto h3 { margin: 0 0 8px; font-family: 'Playfair Display', serif; font-size: 20px; }
+.datos-producto p { min-height: 42px; margin: 0 0 17px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.datos-producto strong { color: var(--rose); font-size: 17px; }
+.catalogo-vacio { padding: 60px 0; color: var(--muted); text-align: center; }
+/* Pie de página y adaptación para pantallas pequeñas. */
+.pie-tienda { padding: 26px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; }
+@media (max-width: 600px) { .encabezado-tienda { padding: 20px 20px 65px; } .presentacion { margin-top: 72px; } .contenido-tienda { padding: 52px 18px 70px; } .titulo-seccion { align-items: start; flex-direction: column; gap: 12px; } .titulo-seccion h2 { font-size: 34px; } }
